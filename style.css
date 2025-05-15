@@ -1,0 +1,302 @@
+/* Estilos Generales */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente minimalista */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Color de fondo suave */
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px 0;
+}
+
+h1, h2, h3 {
+    color: #005A9C; /* Un azul corporativo, puedes ajustarlo */
+    margin-bottom: 20px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Header */
+header {
+    background: #ffffff; /* Fondo blanco para un look limpio */
+    color: #333;
+    padding-top: 20px;
+    min-height: 80px;
+    border-bottom: #005A9C 3px solid; /* Detalle de color corporativo */
+}
+
+header #logo {
+    float: left;
+    max-height: 60px; /* Ajusta según el tamaño de tu logo */
+}
+
+header nav {
+    float: right;
+    margin-top: 20px;
+}
+
+header nav ul {
+    padding: 0;
+    list-style: none;
+}
+
+header nav ul li {
+    display: inline;
+    padding: 0 15px;
+}
+
+header nav ul li a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #007bff; /* Un azul más brillante al pasar el mouse */
+}
+
+/* Sección Hero */
+#hero {
+background: #005A9C; /* Azul corporativo */
+color: #ffffff;
+text-align: center;
+padding: 60px 20px;
+min-height: 250px; /* Ajusta según necesites */
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#hero h1 {
+font-size: 2.8em;
+margin-bottom: 10px;
+color: #ffffff;
+}
+
+#hero p {
+font-size: 1.2em;
+}
+
+#hero .ubicacion {
+font-size: 1em;
+margin-top: 20px;
+font-style: italic;
+}
+
+/* Secciones */
+section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* Servicios */
+.servicios-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Diseño responsive */
+    gap: 30px; /* Espacio entre los servicios */
+    margin-top: 30px;
+}
+
+.servicio {
+    background: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    text-align: left; /* Alineación para el contenido del servicio */
+    transition: transform 0.3s ease;
+}
+
+.servicio:hover {
+    transform: translateY(-5px); /* Efecto sutil al pasar el mouse */
+}
+
+.servicio-img {
+    width: 100%;
+    max-height: 200px; /* Ajusta según tus imágenes */
+    object-fit: cover; /* Asegura que la imagen cubra el espacio sin deformarse */
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.servicio h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+}
+
+/* Nosotros */
+#nosotros .equipo-container {
+display: flex;
+flex-direction: column; /* Apila la imagen y el texto en móviles */
+align-items: center;
+gap: 20px;
+}
+
+#foto-instaladores {
+max-width: 100%;
+height: auto;
+border-radius: 8px;
+box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#nosotros p {
+max-width: 700px; /* Limita el ancho del texto para mejor legibilidad */
+margin-left: auto;
+margin-right: auto;
+}
+
+/* Ajuste para pantallas más grandes en "Nosotros" */
+@media (min-width: 768px) {
+    #nosotros .equipo-container {
+    flex-direction: row; /* Imagen y texto lado a lado */
+    text-align: left;
+    }
+    #foto-instaladores {
+    max-width: 45%; /* Ajusta el tamaño de la imagen */
+    margin-right: 30px; /* Espacio entre imagen y texto */
+    }
+    #nosotros p {
+    max-width: none;
+    margin-left: 0;
+    margin-right: 0;
+    }
+}
+
+
+/* Contacto */
+#contacto form {
+max-width: 600px;
+margin: 20px auto;
+background: #ffffff;
+padding: 30px;
+border-radius: 8px;
+box-shadow: 0 0 15px rgba(0,0,0,0.1);
+text-align: left;
+}
+
+#contacto label {
+display: block;
+margin-bottom: 8px;
+font-weight: bold;
+}
+
+#contacto input[type="text"],
+#contacto input[type="email"],
+#contacto input[type="tel"],
+#contacto textarea {
+width: calc(100% - 22px); /* Ajuste para padding y borde */
+padding: 10px;
+margin-bottom: 20px;
+border: 1px solid #ddd;
+border-radius: 4px;
+box-sizing: border-box; /* Importante para el cálculo del ancho */
+}
+
+#contacto textarea {
+resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+#contacto button {
+display: block;
+width: 100%;
+padding: 12px;
+background-color: #007bff; /* Azul para el botón */
+color: white;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+font-size: 1.1em;
+transition: background-color 0.3s ease;
+}
+
+#contacto button:hover {
+background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 30px;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9em;
+}
+
+/* Icono Flotante de WhatsApp */
+.whatsapp-flotante {
+    position: fixed;
+    width: 60px; /* Ajusta el tamaño del contenedor del icono */
+    height: 60px; /* Ajusta el tamaño del contenedor del icono */
+    bottom: 25px;
+    right: 25px;
+    background-color: #25D366; /* Color oficial de WhatsApp */
+    color: #FFF;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px; /* Tamaño del icono (si usas Font Awesome) */
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.3);
+    z-index: 1000; /* Asegura que esté por encima de otros elementos */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Quita el subrayado del enlace */
+}
+
+.whatsapp-flotante img {
+    width: 35px; /* Ajusta el tamaño de tu imagen de icono */
+    height: 35px;
+}
+
+.whatsapp-flotante i { /* Para Font Awesome */
+    margin: 0;
+}
+
+/* Responsive Design (básico) */
+@media (max-width: 768px) {
+    header #logo {
+        float: none;
+        display: block;
+        margin: 0 auto 10px auto; /* Centra el logo */
+        text-align: center;
+    }
+
+    header nav {
+        float: none;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    header nav ul li {
+        display: block; /* Menú en vertical en móviles */
+        padding: 10px 0;
+    }
+
+    #hero h1 {
+    font-size: 2em;
+    }
+
+    #hero p {
+    font-size: 1em;
+    }
+
+    .servicios-grid {
+        grid-template-columns: 1fr; /* Una columna en móviles */
+    }
+
+    .container {
+        width: 95%;
+    }
+}

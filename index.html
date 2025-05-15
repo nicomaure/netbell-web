@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NET-BELL - Seguridad y Tecnología</title>
+    <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+    <header>
+        <div class="container">
+            <img src="netbell.jpeg" alt="Logo NET-BELL" id="logo">
+            <nav>
+                <ul>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="hero">
+        <div class="container">
+            <h1>Soluciones Integrales en Seguridad y Tecnología</h1>
+            <p>Instalación de cámaras, soporte informático y servicios de electricidad.</p>
+            <p class="ubicacion">Argentina - Mendoza - Luján de Cuyo</p>
+        </div>
+    </section>
+
+    <section id="servicios" class="container">
+        <h2>Nuestros Servicios</h2>
+        <div class="servicios-grid">
+            <div class="servicio">
+                <img src="placeholder-camaras.jpg" alt="Cámaras de Seguridad" class="servicio-img">  <h3>Instalación de Cámaras de Seguridad</h3>
+                <p>Protege lo que más importa con nuestros sistemas de videovigilancia de última generación.</p>
+            </div>
+            <div class="servicio">
+                <img src="placeholder-soporte.jpg" alt="Soporte Informático" class="servicio-img"> <h3>Soporte Informático</h3>
+                <p>Asistencia técnica para tus equipos y redes, garantizando su óptimo funcionamiento.</p>
+            </div>
+            <div class="servicio">
+                <img src="placeholder-electricidad.jpg" alt="Electricidad" class="servicio-img"> <h3>Servicios de Electricidad</h3>
+                <p>Instalaciones y mantenimiento eléctrico seguro y eficiente para tu hogar o negocio.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros" class="container">
+        <h2>Nuestro Equipo</h2>
+        <div class="equipo-container">
+            <img src="netbellinstaladores.jpeg" alt="Instaladores de NET-BELL" id="foto-instaladores">
+            <p>Contamos con técnicos especializados y comprometidos con brindarte el mejor servicio y la tranquilidad que necesitas.</p>
+        </div>
+    </section>
+
+    <section id="contacto" class="container">
+        <h2>Contacto</h2>
+        <p>¿Tienes alguna consulta o necesitas un presupuesto? ¡Contáctanos!</p>
+        <form action="mailto:netbellinfo@gmail.com" method="post" enctype="text/plain">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="telefono">Teléfono (opcional):</label>
+            <input type="tel" id="telefono" name="telefono">
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+            <button type="submit">Enviar Información</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="currentYear"></span> NET-BELL. Todos los derechos reservados.</p>
+            <p>Argentina - Mendoza - Luján de Cuyo</p>
+        </div>
+    </footer>
+
+    <a href="https://wa.me/549261592510" class="whatsapp-flotante" target="_blank">
+        <img src="whatsapp-icon.png" alt="WhatsApp NET-BELL">
+        </a>
+
+    <script src="script.js"></script>
+</body>
+</html>
